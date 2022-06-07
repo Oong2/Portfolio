@@ -35,25 +35,298 @@
   }
   
   /* style 시작 */
-  
+
   .anchor-box {
     display:flex;
     position:fixed;
     top:0;
     left:0;
+    margin-left: 154px;
   }
   
   .anchor-box > a {
-    display:block;
-    width:120px;
+    display:block; 
+    width: 33.6px;
     text-align:center;
-    margin:0 10px;
+    margin:717px 2px;
     font-weight:bold;
+    opacity: 25%;
   }
+
   
+  .anchor-box > a:nth-child(1){
+      opacity: 100%;
+  }
+
+  
+  .anchor-box > a:hover{
+      opacity: 100%;
+      transition:0.5s;
+  }
+
   .anchor-box > a > img {
     display:block;
     width:100%;
   }
 
+  .section{
+    position: relative;
+    }
+
+  .section > .space{
+      position:absolute;
+      width: 1920px;
+      height: 1080px;
+  }
+
+  
+  .section > .img-box > p{
+      color:white;
+      font-size:96px;
+      line-height: 110px;
+      letter-spacing: -6.5px;
+      margin-top: 413px;
+      margin-left: 150px;
+      margin-bottom:20px;
+  }
+
+
+  .section > .img-box > span{
+      position:absolute;
+      color:white;
+      font-size: 20px;
+      margin-left: 154px;
+      
+      
+  }
+
+  .section > .right{
+      width: 1920px;
+      position:absolute;
+  }
+
+  .section > .right > .me{
+      z-index: 999;
+      position: absolute;
+      width: 782.5px;
+      height: 870px;
+      top:115px;
+      right:80px;
+  }
+
+  
+  .section > .right > .me:hover{
+    transition:0.5s;
+    filter:drop-shadow(0 0 25px rgba(255,255,255,0.7));
+  }
+  
+  .section > .img-box > span > .text-grad{
+      font-weight: bold;
+  }
+
+  .text-grad{ 
+      background: linear-gradient(to bottom, #FF2323, #FC4BB5, #F9B86C);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .section > .top-wrap{
+      width: 100%;
+      position: absolute;
+      z-index: 999;
+  }
+
+  .section > .top-wrap > .menu-bar{
+      width: 1360px;
+      color: white;
+      text-align: center;
+      /* margin-top: 40px; */
+      margin-left: 496px;
+
+  }
+
+  .section > .top-wrap > .menu-bar > p{
+      margin-right: 72px;
+      line-height: 110px;
+      letter-spacing:-6.5%;
+      font-size: 24px;
+      cursor: pointer;
+      /* font-weight: 300; */
+  }
+
+  
+  .section > .top-wrap > .menu-bar > p:hover{
+    
+    text-shadow: 0 0 20px rgba(255,255,255,1) ;
+    transition:0.2s;
+  }
+
+
+  .section > .top-right{
+    position: absolute;
+    z-index: 9999;
+    top:37px;
+    right:50px;
+  }
+
+  
+  .section > .top-right > .more{
+    cursor: pointer;
+    width: 8px;
+    height: 32px;
+  }
+
+  
+  .section > .top-right > .more:hover{
+    
+    opacity: 0.5;
+    transition:0.2s;
+  }
+
+  .section > .mid{
+    position: absolute;
+    z-index: 999;
+    margin-left: 930px;
+    margin-top: 510px;
+  }
+
+  .section > .mid > .planet{
+    width: 60px;
+    height: 60px;
+    filter:drop-shadow(0 0 25px rgba(255,77,0,0.5));
+  }
+
+  .section > .bottom{
+    position: fixed;
+    bottom:30px;
+    left:732px;
+    z-index: 99999;
+  }
+
+  .section > .bottom2{
+    position: fixed;
+    bottom:20px;
+    left:868px;
+    z-index: 9999;
+    width: 500px;
+  }
+  
+  .section > .bottom2 > p{
+    color:white;
+    font-size: 12px;
+    letter-spacing:-6.5%;
+  }
+  
+  .section > .bottom > .text-bottom{
+   width: 500px;
+   margin-bottom: 20px;
+  }
+  
+  .section > .bottom > .text-bottom > p{
+    color:white;
+    margin-left: 40px;
+    font-size: 24px;
+    letter-spacing: -6.5%;
+    text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
+    cursor: pointer;
+  }
+
+  
+  .section > .bottom > .text-bottom > p:hover{
+    opacity: 0.5;
+    transition:0.5s;
+  }
+
+ .menu-more-wrap{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background: rgb(1,62,135);
+    background: linear-gradient(180deg, rgba(1,62,135,1) 0%, rgba(156,201,253,1) 100%);
+    z-index: 999999;
+    display:none;
+    transition:0.5s;
+  }
+
+
+  .menu-more-wrap.active{
+    display: block;
+  }
+
+  .menu-more-wrap > .menu-more{
+    position: absolute;
+    right:40px;
+    top:30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+
+  .menu-more-wrap > .more-txt{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:518px;
+  }
+
+  
+  .menu-more-wrap > .more-txt > p{
+    margin-left: 110px;
+    color:white;
+    font-size:36px;
+    cursor: pointer;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25) ;
+  }
+
+  
+  .section > .space > .p{
+    color:white;
+    font-size:20px;
+    position:absolute;
+  }
+
+  .right-text{
+    position:absolute;
+    text-align:center;
+    right:112px;
+    top:325px;
+    z-index: 9999;
+  }
+  
+  .right-text > p{
+    font-size:40px;
+    font-weight: bold;
+    
+    letter-spacing:-6.5%;
+    color:white;
+    margin-bottom: 50px;
+  }
+
+
+  .right-text > span{
+    color: rgba(231,231,231,1);
+    line-height: 180%;
+    font-size: 20px;
+    letter-spacing:-6.5%;
+    font-weight:400;
+    text-shadow: 0 4px 4px rgba(255,255,255,0.25) ;
+  }
+  
+  .right-text > span > .bold{
+    font-weight: bold;
+  }
+
+  .section > .space > span{
+  background: linear-gradient(to bottom, #FF2CAA, #5CC1E1, #C8E478);
+    color: transparent;
+    -webkit-background-clip: text;
+/*     
+    text-shadow: 0 2px 4px rgba(255,255,255,0.25) ; */
+  }
+
+  
+  .section > .space > span > .white{
+    color:white;
+  }
   /* style 끝 */
