@@ -1,0 +1,128 @@
+고정 html
+<div class="top-wrap">
+                <div class="menu-bar row">
+                    <p class="cell">BRANDING</p>
+                    <p class="cell">ABOUT ME</p>
+                    <p class="cell">EXPERIENCE</p>
+                    <p class="cell">PORTFOLIO</p>
+                    <p class="cell">PROCESS</p>
+                </div>
+            </div>
+
+ <div class="top-right">
+              <div class="img-box more" style="background-image: url(./img/more.png);"></div>
+        </div>
+            <div class="mid">
+              <div class="img-box planet" style="background-image: url(./img/1planet.png);"></div>
+        </div>
+<div class="bottom">
+              <div class="text-bottom row">
+                <p class="cell">"아이디어가 반짝거리는 디자이너"</p>
+              </div>
+            </div>
+
+
+            <div class="right">
+            <div class="img-box me" style="background-image: url(./img/Rectangle\ 1.png);"></div>
+        </div>
+            <div class="img-box space" style="background-image: url(./img/온전한우주.png);">
+                <p>Spectrum<br>Designer</p>
+                <span>UI/UX Designer <span class="text-grad">Kim Kiho</p></span>
+            </div>
+
+
+고정 css
+
+
+.top-wrap{
+      width: 100%;
+      position: absolute;
+      z-index: 999;
+  }
+
+.top-wrap > .menu-bar{
+      width: 1360px;
+      color: white;
+      text-align: center;
+      /* margin-top: 40px; */
+      margin-left: 496px;
+
+  }
+
+.top-wrap > .menu-bar > p{
+      margin-right: 72px;
+      line-height: 110px;
+      letter-spacing:-6.5%;
+      font-size: 24px;
+      cursor: pointer;
+      /* font-weight: 300; */
+  }
+
+  
+.top-wrap > .menu-bar > p:hover{
+    
+    text-shadow: 0 0 20px rgba(255,255,255,1) ;
+    transition:0.2s;
+  }
+
+
+.top-right{
+    position: absolute;
+    z-index: 9999;
+    top:37px;
+    right:50px;
+  }
+
+  
+.top-right > .more{
+    cursor: pointer;
+    width: 8px;
+    height: 32px;
+  }
+
+  
+.top-right > .more:hover{
+    
+    opacity: 0.5;
+    transition:0.2s;
+  }
+
+.mid{
+    position: absolute;
+    z-index: 999;
+    margin-left: 930px;
+    margin-top: 510px;
+  }
+
+.mid > .planet{
+    width: 60px;
+    height: 60px;
+    filter:drop-shadow(0 0 25px rgba(255,77,0,0.5));
+  }
+
+.bottom{
+    position: fixed;
+    bottom:30px;
+    left:732px;
+    z-index: 99999;
+  }
+
+.bottom > .text-bottom{
+   width: 500px;
+   margin-bottom: 20px;
+  }
+  
+.bottom > .text-bottom > p{
+    color:white;
+    margin-left: 40px;
+    font-size: 24px;
+    letter-spacing: -6.5%;
+    text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
+    cursor: pointer;
+  }
+
+  
+.bottom > .text-bottom > p:hover{
+    opacity: 0.5;
+    transition:0.5s;
+  }

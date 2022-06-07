@@ -88,6 +88,7 @@
       margin-top: 413px;
       margin-left: 150px;
       margin-bottom:20px;
+      font-family:kaisei Tokumin ;
   }
 
 
@@ -97,6 +98,7 @@
       font-size: 20px;
       margin-left: 154px;
       
+      font-family:kaisei Tokumin ;
       
   }
 
@@ -122,6 +124,7 @@
   
   .section > .img-box > span > .text-grad{
       font-weight: bold;
+      font-family:kaisei Tokumin ;
   }
 
   .text-grad{ 
@@ -152,6 +155,7 @@
       font-size: 24px;
       cursor: pointer;
       /* font-weight: 300; */
+      font-family:kaisei Tokumin ;
   }
 
   
@@ -215,24 +219,27 @@
     color:white;
     font-size: 12px;
     letter-spacing:-6.5%;
+    font-family:kaisei Tokumin ;
   }
   
-  .section > .bottom > .text-bottom{
+  .section > .bottom > .text-bottom1{
+    position: absolute;
    width: 500px;
-   margin-bottom: 20px;
+   bottom: 20px;
   }
   
-  .section > .bottom > .text-bottom > p{
+  .section > .bottom > .text-bottom1 > .txt1{
     color:white;
     margin-left: 40px;
     font-size: 24px;
     letter-spacing: -6.5%;
     text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
     cursor: pointer;
+    font-family:kaisei Tokumin ;
   }
 
   
-  .section > .bottom > .text-bottom > p:hover{
+  .section > .bottom > .text-bottom1 > p:hover{
     opacity: 0.5;
     transition:0.5s;
   }
@@ -277,6 +284,7 @@
     font-size:36px;
     cursor: pointer;
     text-shadow: 0 4px 4px rgba(0,0,0,0.25) ;
+    font-family:kaisei Tokumin ;
   }
 
   
@@ -301,6 +309,7 @@
     letter-spacing:-6.5%;
     color:white;
     margin-bottom: 50px;
+    font-family:kaisei Tokumin ;
   }
 
 
@@ -308,9 +317,10 @@
     color: rgba(231,231,231,1);
     line-height: 180%;
     font-size: 20px;
-    letter-spacing:-6.5%;
-    font-weight:400;
-    text-shadow: 0 4px 4px rgba(255,255,255,0.25) ;
+    letter-spacing:-8%;
+    font-weight:600;
+    text-shadow: 0 4px 10px rgba(255,255,255,0.25) ;
+    
   }
   
   .right-text > span > .bold{
@@ -318,6 +328,7 @@
   }
 
   .section > .space > span{
+    font-weight: regular;
   background: linear-gradient(to bottom, #FF2CAA, #5CC1E1, #C8E478);
     color: transparent;
     -webkit-background-clip: text;
@@ -328,5 +339,280 @@
   
   .section > .space > span > .white{
     color:white;
+    font-family:kaisei Tokumin ;
   }
+
+  .section > .mid > .planet2{
+    width: 60px;
+    height: 60px;
+    filter:drop-shadow(0 0 25px rgba(255,167,35,0.5));
+  }
+
+  
+  .section > .txt-btm{
+    position: absolute;
+    width: 500px;
+    bottom:20px;
+    left:802px;
+    z-index: 9999;
+    
+  }
+
+  
+  .section > .txt-btm > p{
+    color:white;
+    font-size: 24px;
+    letter-spacing:-6.5%;
+    text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
+  }
+
+  .section > .top-wrap > .menu-bar2{
+    width: 1360px;
+    color: white;
+    text-align: center;
+    /* margin-top: 40px; */
+    margin-left: 496px;
+
+}
+
+.section > .top-wrap > .menu-bar2 > p{
+    margin-right: 72px;
+    line-height: 110px;
+    letter-spacing:-6.5%;
+    font-size: 24px;
+    cursor: pointer;
+    /* font-weight: 300; */
+    opacity: 0.5;
+    font-family:kaisei Tokumin ;
+}
+
+.section > .top-wrap > .menu-bar2 > p:nth-child(1){
+  opacity: 1;
+}
+
+.section > .top-wrap > .menu-bar2 > p:hover{
+  
+  text-shadow: 0 0 20px rgba(255,255,255,1) ;
+  opacity: 1;
+  transition:0.2s;
+}
+
+.section > .right > .glass-me{
+  z-index: 999;
+  position: absolute;
+  width: 716px;
+  height: 620px;
+  top:259px;
+  right:108px;
+}
+
+
+.section > .right > .glass-me:hover{
+transition:0.5s;
+filter:drop-shadow(0 0 25px rgba(255,255,255,0.25));
+}
+
+.section > .mid > .planet3{
+  width: 60px;
+  height: 60px;
+  filter:drop-shadow(0 0 25px rgba(82,193,255,0.5));
+}
+
+.section > .top-wrap > .menu-bar3{
+  width: 1360px;
+  color: white;
+  text-align: center;
+  /* margin-top: 40px; */
+  margin-left: 496px;
+
+}
+
+.section > .top-wrap > .menu-bar3 > p{
+  margin-right: 72px;
+  line-height: 110px;
+  letter-spacing:-6.5%;
+  font-size: 24px;
+  cursor: pointer;
+  /* font-weight: 300; */
+  opacity: 0.5;
+  font-family:kaisei Tokumin ;
+}
+
+.section > .top-wrap > .menu-bar3 > p:nth-child(2){
+opacity: 1;
+}
+
+.section > .top-wrap > .menu-bar3 > p:hover{
+
+text-shadow: 0 0 20px rgba(255,255,255,1) ;
+opacity: 1;
+transition:0.2s;
+}
+
+.section > .right > .movie-me{
+  z-index: 999;
+  position: absolute;
+  width: 577.5px;
+  height: 393px;
+  top:333.5px;
+  right:108px;
+}
+
+
+.section > .right > .movie-me:hover{
+transition:0.5s;
+filter:drop-shadow(0 0 25px rgba(255,255,255,0.25));
+}
+
+.section > .mid > .planet4{
+  width: 60px;
+  height: 60px;
+  filter:drop-shadow(0 0 25px rgba(167,167,167,0.5));
+}
+
+.section > .top-wrap > .menu-bar4{
+  width: 1360px;
+  color: white;
+  text-align: center;
+  /* margin-top: 40px; */
+  margin-left: 496px;
+
+}
+
+.section > .top-wrap > .menu-bar4 > p{
+  margin-right: 72px;
+  line-height: 110px;
+  letter-spacing:-6.5%;
+  font-size: 24px;
+  cursor: pointer;
+  /* font-weight: 300; */
+  opacity: 0.5;
+  font-family:kaisei Tokumin ;
+}
+
+.section > .top-wrap > .menu-bar4 > p:nth-child(3){
+opacity: 1;
+}
+
+.section > .top-wrap > .menu-bar4 > p:hover{
+
+text-shadow: 0 0 20px rgba(255,255,255,1) ;
+opacity: 1;
+transition:0.2s;
+}
+
+.section > .txt-btm3{
+  position: absolute;
+  width: 330px;
+  bottom:20px;
+  left:810px;
+  z-index: 9999;
+  
+}
+
+
+.section > .txt-btm3 > p{
+  color:white;
+  font-size: 24px;
+  letter-spacing:-6.5%;
+  text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
+}
+
+.section > .txt-btm4{
+  position: absolute;
+  width: 280px;
+  bottom:20px;
+  left:833px;
+  z-index: 9999;
+  
+}
+
+
+.section > .txt-btm4 > p{
+  color:white;
+  font-size: 24px;
+  letter-spacing:-6.5%;
+  text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
+}
+
+.section > .space > .percent{
+  position: absolute;
+  left:355px;
+  top:555px;
+  width: 83px;
+  height: 95px;
+  z-index: 9999;
+}
+
+.section > .right > .portfolio-me{
+  z-index: 999;
+  position: absolute;
+  width: 640px;
+  height: 234px;
+  top:422px;
+  right:115px;
+  opacity: 0.8;
+}
+
+
+.section > .right > .portfolio-me:hover{
+transition:0.5s;
+filter:drop-shadow(0 0 25px rgba(255,255,255,0.25));
+opacity: 1;
+}
+
+.section > .mid > .planet5{
+  width: 60px;
+  height: 60px;
+  filter:drop-shadow(0 0 25px rgba(255,144,43,0.5));
+}
+
+.section > .top-wrap > .menu-bar5{
+  width: 1360px;
+  color: white;
+  text-align: center;
+  /* margin-top: 40px; */
+  margin-left: 496px;
+
+}
+
+.section > .top-wrap > .menu-bar5 > p{
+  margin-right: 72px;
+  line-height: 110px;
+  letter-spacing:-6.5%;
+  font-size: 24px;
+  cursor: pointer;
+  /* font-weight: 300; */
+  opacity: 0.5;
+  font-family:kaisei Tokumin ;
+}
+
+.section > .top-wrap > .menu-bar5 > p:nth-child(4){
+opacity: 1;
+}
+
+.section > .top-wrap > .menu-bar5 > p:hover{
+
+text-shadow: 0 0 20px rgba(255,255,255,1) ;
+opacity: 1;
+transition:0.2s;
+}
+
+.section > .txt-btm4{
+  position: absolute;
+  width: 330px;
+  bottom:20px;
+  left:864px;
+  z-index: 9999;
+  
+}
+
+
+.section > .txt-btm4 > p{
+  color:white;
+  font-size: 24px;
+  letter-spacing:-6.5%;
+  text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
+}
+
   /* style 끝 */
