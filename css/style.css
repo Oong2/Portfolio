@@ -38,7 +38,6 @@
 
   .anchor-box {
     display:flex;
-    position:fixed;
     top:0;
     left:0;
     margin-left: 154px;
@@ -615,4 +614,23 @@ transition:0.2s;
   text-shadow: 0 4px 4px rgba(255,255,255,0.5) ;
 }
 
+.section > .long-space{
+  position:absolute;
+  width: 1920px;
+  height: 4910px;
+  animation-name:space;
+  animation-duration:30s ;
+}
+
   /* style 끝 */
+
+  /* animation */
+  @-webkit-keyframes space {
+    0% {
+      top:0;
+    }
+    100% {
+      left: 4910px;;
+    }
+  }
+  /* animation fin */
