@@ -7,6 +7,22 @@ new fullpage('#fullpage', {
 
 
 $(document).ready(function() {
+
+  $(".fullpage").fullpage({
+      
+    navigation: true ,
+    navigationPosition: 'left' ,
+    
+ 
+    loopHorizontal: false,
+
+    controlArrows: false,
+    slidesNavigation: true,
+    slidesNavPosition: 'top',
+    keyboardScrolling: true,
+
+  });
+
    $(".section > .top-right > .more").click(function(){
      $(".menu-more-wrap").addClass("active");
 
@@ -22,27 +38,27 @@ $(document).ready(function() {
      $(".menu-more-wrap").removeClass("active");
    })
 
-   $(".section > .top-wrap > .move > p:nth-child(1)").click(function(){
+   $(".top-wrap > .move > p:nth-child(1)").click(function(){
   
     fullpage_api.moveTo('section2', 1);
   })
 
-  $(".section > .top-wrap > .move > p:nth-child(2)").click(function(){
+  $(".top-wrap > .move > p:nth-child(2)").click(function(){
   
     fullpage_api.moveTo('section3', 1);
   })
   
-  $(".section > .top-wrap > .move > p:nth-child(3)").click(function(){
+  $(".top-wrap > .move > p:nth-child(3)").click(function(){
   
     fullpage_api.moveTo('section4', 1);
   })
   
-  $(".section > .top-wrap > .move > p:nth-child(4)").click(function(){
+  $(".top-wrap > .move > p:nth-child(4)").click(function(){
   
     fullpage_api.moveTo('section5', 1);
   })
   
-  $(".section > .top-wrap > .move > p:nth-child(5)").click(function(){
+  $(".top-wrap > .move > p:nth-child(5)").click(function(){
   
     fullpage_api.moveTo('section6', 1);
   })
@@ -71,4 +87,28 @@ $(document).ready(function() {
   
     fullpage_api.moveTo('section6', 1);
   })
+
+  //  $(".sf1").click(function(){
+
+  //   fullpage_api.moveTo('section4', 1);
+  //  })
+
+  $(".top-right").click(function(){
+    if($(".top-right").hasClass("active")){
+      $(".top-right").removeClass("active");
+      $(".menu-box-1").removeClass("active");
+      $(".top-wrap>.menu-bar>p").removeClass("active");
+    }
+    else {
+      $(".top-right").addClass("active");
+      $(".menu-box-1").addClass("active");
+      $(".top-wrap>.menu-bar>p").addClass("active");
+    }
+  });
+
+  $(".menu-box-1 > ul > li > a").click(function(){
+    $(".top-right").removeClass("active");
+    $(".menu-box-1").removeClass("active");
+  });
+
 });

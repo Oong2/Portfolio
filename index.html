@@ -1,436 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
 
-    <!-- 제이쿼리자리 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 제이쿼리자리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.css">
-<!-- 외부 js 라이브러리 // 웹폰트 // 폰트어썸 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.css">
+  <!-- 외부 js 라이브러리 // 웹폰트 // 폰트어썸 -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
-<style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Noto+Sans+KR:wght@100&display=swap"
+    rel="stylesheet">
+  <style>
     * {
       font-family: 'Kaisei Tokumin', serif;
-font-family: 'Noto Sans KR', sans-serif;
+      font-family: 'Noto Sans KR', sans-serif;
     }
+  </style>
 
-    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Noto+Sans+KR:wght@100&display=swap"
+    rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
-
-<!-- 내가만든 css / js -->
-<link rel="stylesheet" href="./css/style.css">
-<script src="./js/script.js" defer></script>
+  <!-- 내가만든 css / js -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
 </head>
+
 <body>
-    
-    <div id="fullpage">
-        <div class="section">
 
-          <div class="anchor-box">
-            <a href="#section1">
-              <img src="./img/1planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section2">
-              <img src="./img/2planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section3">
-              <img src="./img/3planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section4">
-              <img src="./img/4planet.png" alt="">
-              <span></span>
-            </a> 
-            <a href="#section5">
-                <img src="./img/5planet.png" alt="">
-                <span></span>
-              </a>
-    
-            
-          </div>
-    
-
-            <div class="top-wrap">
-                <div class="menu-bar move row">
-                    <p class="cell">BRANDING</p>
-                    <p class="cell">ABOUT ME</p>
-                    <p class="cell">EXPERIENCE</p>
-                    <p class="cell">PORTFOLIO</p>
-                    <p class="cell">PROCESS</p>
-                </div>
-            </div>
-   
-            <div class="menu-more-wrap">
-              <div class="img-box menu-more" style="background-image: url(./img/x.png);"></div>
-              <div class="more-txt row">
-                <p class="cell">BRANDING</p>
-                <p class="cell">ABOUTME</p>
-                <p class="cell">EXPERIENCE</p>
-                <p class="cell">PORTFOLIO</p>
-                <p class="cell">PROCESS</p>
-              </div>
-
-            </div>
-            
-            <div class="top-right">
-              <div class="img-box more" style="background-image: url(./img/more.png);"></div>
-        </div>
-            <div class="mid">
-              <div class="img-box planet" style="background-image: url(./img/1planet.png);"></div>
-        </div>
-
-            <div class="bottom">
-              <div class="text-bottom1 row">
-                <p class="txt1 cell">VIEW PROCESS</p>
-                <P class="txt1 cell">PORTFOLIO</P>
-              </div>
-            </div>
-            
-            <div class="bottom2">
-              <p>@2022. Kim Kiho. All right reserved</p>
-            </div>
-
-            <div class="right">
-            <div class="img-box me" style="background-image: url(./img/Rectangle\ 1.png);"></div>
-        </div>
-            <div class="img-box space" style="background-image: url(./img/온전한우주.png);">
-                <p>Spectrum<br>Designer</p>
-                <span>UI/UX Designer <span class="text-grad">Kim Kiho</p></span>
-            </div>
-           
-        
-        </div>
-        <div class="section">
-
-          <div class="anchor-box">
-            <a href="#section1">
-              <img src="./img/1planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section2">
-              <img src="./img/2planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section3">
-              <img src="./img/3planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section4">
-              <img src="./img/4planet.png" alt="">
-              <span></span>
-            </a> 
-            <a href="#section5">
-                <img src="./img/5planet.png" alt="">
-                <span></span>
-              </a>
-    
-            
-          </div>
-    
-
-          <div class="top-wrap">
-            <div class="menu-bar2 move row">
-                <p class="cell">BRANDING</p>
-                <p class="cell">ABOUT ME</p>
-                <p class="cell">EXPERIENCE</p>
-                <p class="cell">PORTFOLIO</p>
-                <p class="cell">PROCESS</p>
-            </div>
-        </div>
-
-<div class="top-right">
-          <div class="img-box more" style="background-image: url(./img/more.png);"></div>
-    </div>
-        <div class="mid">
-          <div class="img-box planet2" style="background-image: url(./img/2planet.png);"></div>
-    </div>
-
-        
-        <div class="right">
-          <div class="right-text">
-            <p>Overview</p>
-            <span>우주엔 수많은 행성들이있죠.
-              <br><br>그 행성들은 각자 다 다르고, 어떤 행성에는 생명체가 살고있으며<br> 
-              그 행성들은 우주에 터를빌려 살아갑니다.<br>
-              그리고 우주는 그 깊이를 알 수 없습니다.<br><br>
-              저는 한가지에 국한되지않은, 많은것을 포용 할 수 있는,<br>
-              그러나 <span class="bold">올곧으며 탄탄한 깊이있는 디자이너가 되고싶어</span><br> 
-              우주를 브랜드 컨셉으로 잡게되었습니다. </span>
-          </div>
+  
+  <div class="top-wrap">
+    <div class="menu-bar move row">
+      <p class="cell">BRANDING</p>
+      <p class="cell">ABOUT ME</p>
+      <p class="cell">EXPERIENCE</p>
+      <p class="cell">PORTFOLIO</p>
+      <p class="cell">PROCESS</p>
+      <div class="top-right cell-r">
+        <div class="img-box more" style="background-image: url(./img/more.png);"></div>
       </div>
-          <div class="img-box space" style="background-image: url(./img/온전한우주.png);">
-              <p>Brand<br>Concept</p>
-              <span>Typography<span class="white">[ Kaisei Tokumin ]</span><br>
-                    Guardians of the Galaxy<br>
-                    0123456789 / ( !@#$%^&* )</span>
-          </div>
-          <div class="txt-btm">
-            <p>"아이디어가 반짝거리는 디자이너"</p>
-          </div>
+    </div>
+  </div>
+  <nav class="menu-box-1">
+    <ul>
+      <li><a href="#section1">BRANDING</a></li>
+      <li><a href="#section2">ABOUT ME</a></li>
+      <li><a href="#section3">EXPERIENCE</a></li>
+      <li><a href="#section4">PORTFOLIO</a></li>
+      <li><a href="#section5">PROCESS</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="fullpage">
+    <div class="section" style="background-image: url(./img/온전한우주.png);">
+      <div class="mid">
+        <div class="img-box planet a-p" style="background-image: url(./img/1planet.png);"></div>
+      </div>
+
+      <div class="bottom">
+        <div class="text-bottom1 row">
+          <p class="txt1 cell">VIEW PROCESS</p>
+          <P class="txt1 cell">PORTFOLIO</P>
         </div>
-        <div class="section">
+      </div>
 
-          <div class="anchor-box">
-            <a href="#section1">
-              <img src="./img/1planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section2">
-              <img src="./img/2planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section3">
-              <img src="./img/3planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section4">
-              <img src="./img/4planet.png" alt="">
-              <span></span>
-            </a> 
-            <a href="#section5">
-                <img src="./img/5planet.png" alt="">
-                <span></span>
-              </a>
-    
-            
-          </div>
-    
+      <div class="bottom2">
+        <p>@2022. Kim Kiho. All right reserved</p>
+      </div>
 
-          <div class="top-wrap">
-            <div class="menu-bar3 move row">
-                <p class="cell">BRANDING</p>
-                <p class="cell">ABOUT ME</p>
-                <p class="cell">EXPERIENCE</p>
-                <p class="cell">PORTFOLIO</p>
-                <p class="cell">PROCESS</p>
-            </div>
-        </div>
-
-<div class="top-right">
-          <div class="img-box more" style="background-image: url(./img/more.png);"></div>
-    </div>
-        <div class="mid">
-          <div class="img-box planet3" style="background-image: url(./img/3planet.png);"></div>
-    </div>
-    <div class="txt-btm3">
-      <p>"의도를 파악할줄 아는 디자이너"</p>
-    </div>
+      <div class="right">
+        <div class="img-box me" style="background-image: url(./img/Rectangle\ 1.png);"></div>
+      </div>
+      <div class="img-box space">
+        <p>Spectrum<br>Designer</p>
+        <span>UI/UX Designer <span class="text-grad">Kim Kiho</p></span>
+      </div>
 
 
-        <div class="right">
-        <div class="img-box glass-me" style="background-image: url(./img/dimencion\ me.png);"></div>
-    </div>
-        <div class="img-box space row" style="background-image: url(./img/온전한우주.png);">
-            <p>About Me</p>
-            <span class="cell">Design Skill
-              <br>Photoshop
-              <br>Illustrator
-              <br>Visual Studio Code</span>
-              <div class="img-box percent" style="background-image: url(./img/percent.png);"></div>
-        </div>
-        </div>
-        <div class="section">
-
-          <div class="anchor-box">
-            <a href="#section1">
-              <img src="./img/1planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section2">
-              <img src="./img/2planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section3">
-              <img src="./img/3planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section4">
-              <img src="./img/4planet.png" alt="">
-              <span></span>
-            </a> 
-            <a href="#section5">
-                <img src="./img/5planet.png" alt="">
-                <span></span>
-              </a>
-    
-            
-          </div>
-    
-
-          <div class="top-wrap">
-            <div class="menu-bar4 move row">
-                <p class="cell">BRANDING</p>
-                <p class="cell">ABOUT ME</p>
-                <p class="cell">EXPERIENCE</p>
-                <p class="cell">PORTFOLIO</p>
-                <p class="cell">PROCESS</p>
-            </div>
-        </div>
-
-<div class="top-right">
-          <div class="img-box more" style="background-image: url(./img/more.png);"></div>
-    </div>
-        <div class="mid">
-          <div class="img-box planet4" style="background-image: url(./img/4planet.png);"></div>
-    </div>
-    <div class="txt-btm4">
-      <p>"기본기가 충실한 디자이너"</p>
-    </div>
-
-
-        <div class="right">
-        <div class="img-box movie-me" style="background-image: url(./img/experience.png);"></div>
-    </div>
-        <div class="img-box space" style="background-image: url(./img/온전한우주.png);">
-            <p>Experience</p>
-            <span>Music
-              <br>Picture
-              <br>Clothes
-              <br>Work Out</span>
-        </div>
-
-        </div>
-        <div class="section">
-
-          <div class="anchor-box">
-            <a href="#section1">
-              <img src="./img/1planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section2">
-              <img src="./img/2planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section3">
-              <img src="./img/3planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section4">
-              <img src="./img/4planet.png" alt="">
-              <span></span>
-            </a> 
-            <a href="#section5">
-                <img src="./img/5planet.png" alt="">
-                <span></span>
-              </a>
-    
-            
-          </div>
-    
-
-          <div class="top-wrap">
-            <div class="menu-bar5 move row">
-                <p class="cell">BRANDING</p>
-                <p class="cell">ABOUT ME</p>
-                <p class="cell">EXPERIENCE</p>
-                <p class="cell">PORTFOLIO</p>
-                <p class="cell">PROCESS</p>
-            </div>
-        </div>
-
-<div class="top-right">
-          <div class="img-box more" style="background-image: url(./img/more.png);"></div>
-    </div>
-        <div class="mid">
-          <div class="img-box planet5" style="background-image: url(./img/5planet.png);"></div>
-    </div>
-    <div class="txt-btm4">
-      <p>"깊이 있는 디자이너"</p>
-    </div>
-
-
-        <div class="right">
-        <div class="img-box portfolio-me" style="background-image: url(./img/portfolio.png);"></div>
-    </div>
-        <div class="img-box space" style="background-image: url(./img/온전한우주.png);">
-            <p>Portfolio</p>
-            <span>Web Redisign
-              <br>App Redisign
-              <br>Event Page
-              <br>Personal Website
-            </span>
-        </div>
-        </div>
-        <div class="section">
-
-          <div class="anchor-box">
-            <a href="#section1">
-              <img src="./img/1planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section2">
-              <img src="./img/2planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section3">
-              <img src="./img/3planet.png" alt="">
-              <span></span>
-            </a>
-            <a href="#section4">
-              <img src="./img/4planet.png" alt="">
-              <span></span>
-            </a> 
-            <a href="#section5">
-                <img src="./img/5planet.png" alt="">
-                <span></span>
-              </a>
-    
-            
-          </div>
-    
-
-          <div class="top-wrap">
-            <div class="menu-bar move row">
-                <p class="cell">BRANDING</p>
-                <p class="cell">ABOUT ME</p>
-                <p class="cell">EXPERIENCE</p>
-                <p class="cell">PORTFOLIO</p>
-                <p class="cell">PROCESS</p>
-            </div>
-        </div>
-
-<div class="top-right">
-          <div class="img-box more" style="background-image: url(./img/more.png);"></div>
-    </div>
-        <div class="mid">
-
-    </div>
-<div class="bottom">
-          <div class="text-bottom row">
-            <p class="cell">"아이디어가 반짝거리는 디자이너"</p>
-          </div>
-        </div>
-
-
-        <div class="right">
-        
-    </div>
-        <div class="img-box long-space" style="background-image: url(./img/long\ space.png);">
-            <p></p>
-            <span></span>
-        </div>
-    </div>
-   
-      <!-- 핵심은 js의 anchor의 이름과 링크의 주소를 맞춘다 -->
       <div class="anchor-box">
         <a href="#section1">
           <img src="./img/1planet.png" alt="">
@@ -447,16 +117,254 @@ font-family: 'Noto Sans KR', sans-serif;
         <a href="#section4">
           <img src="./img/4planet.png" alt="">
           <span></span>
-        </a> 
+        </a>
         <a href="#section5">
-            <img src="./img/5planet.png" alt="">
-            <span></span>
-          </a>
-
-        
+          <img src="./img/5planet.png" alt="">
+          <span></span>
+        </a>
       </div>
 
 
+    </div>
+    <div class="section"  style="background-image: url(./img/온전한우주.png);">
+
+
+
+      <div class="mid">
+        <div class="img-box planet2 a-p" style="background-image: url(./img/2planet.png);"></div>
+      </div>
+
+
+      <div class="right">
+        <div class="right-text">
+          <p>Overview</p>
+          <span>우주엔 수많은 행성들이있죠.
+            <br><br>그 행성들은 각자 다 다르고, 어떤 행성에는 생명체가 살고있으며<br>
+            그 행성들은 우주에 터를빌려 살아갑니다.<br>
+            그리고 우주는 그 깊이를 알 수 없습니다.<br><br>
+            저는 한가지에 국한되지않은, 많은것을 포용 할 수 있는,<br>
+            그러나 <span class="bold">올곧으며 탄탄한 깊이있는 디자이너가 되고싶어</span><br>
+            우주를 브랜드 컨셉으로 잡게되었습니다. </span>
+        </div>
+      </div>
+      
+      <div class="anchor-box">
+        <a href="#section1">
+          <img src="./img/1planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section2">
+          <img src="./img/2planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section3">
+          <img src="./img/3planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section4">
+          <img src="./img/4planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section5">
+          <img src="./img/5planet.png" alt="">
+          <span></span>
+        </a>
+      </div>
+
+
+      <div class="img-box space" style="background-image: url(./img/온전한우주.png);">
+        <p>Brand<br>Concept</p>
+        <span>Typography<span class="white">[ Kaisei Tokumin ]</span><br>
+          Guardians of the Galaxy<br>
+          0123456789 / ( !@#$%^&* )</span>
+      </div>
+      <div class="txt-btm">
+        <p>"아이디어가 반짝거리는 디자이너"</p>
+      </div>
+    </div>
+    <div class="section" style="background-image: url(./img/온전한우주.png);">
+
+
+      <div class="slide">
+
+      <div class="mid">
+        <div class="img-box planet3 a-p" style="background-image: url(./img/3planet.png);"></div>
+      </div>
+
+      <div class="txt-btm3">
+        <p>"의도를 파악할줄 아는 디자이너"</p>
+      </div>
+
+
+      <div class="right">
+        <div class="img-box glass-me" style="background-image: url(./img/dimencion\ me.png);"></div>
+      </div>
+      <div class="img-box space row">
+        <p>About Me</p>
+        <span class="cell">Design Skill
+          <br>Photoshop
+          <br>Illustrator
+          <br>Visual Studio Code</span>
+        <div class="img-box percent" style="background-image: url(./img/percent.png);"></div>
+      </div>
+      
+      <div class="anchor-box">
+        <a href="#section1">
+          <img src="./img/1planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section2">
+          <img src="./img/2planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section3">
+          <img src="./img/3planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section4">
+          <img src="./img/4planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section5">
+          <img src="./img/5planet.png" alt="">
+          <span></span>
+        </a>
+      </div>
+
+
+      </div>
+     
+      <div class="slide">
+        
+
+      </div>
+
+      <div class="slide">
+
+      </div>
+      
+      <div class="slide">
+
+      </div>
+
+
+    </div>
+
+    <div class="section"  style="background-image: url(./img/온전한우주.png);">
+
+
+
+
+      <div class="mid">
+        <div class="img-box planet4 a-p" style="background-image: url(./img/4planet.png);"></div>
+      </div>
+      <div class="txt-btm4">
+        <p>"기본기가 충실한 디자이너"</p>
+      </div>
+
+
+      <div class="right">
+        <div class="img-box movie-me" style="background-image: url(./img/experience.png);"></div>
+        
+      </div>
+      
+      <div class="img-box space">
+        <p>Experience</p>
+        <span>Music
+          <br>Picture
+          <br>Clothes
+          <br>Work Out</span>
+      </div>
+
+      <div class="anchor-box">
+        <a href="#section1">
+          <img src="./img/1planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section2">
+          <img src="./img/2planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section3">
+          <img src="./img/3planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section4">
+          <img src="./img/4planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section5">
+          <img src="./img/5planet.png" alt="">
+          <span></span>
+        </a>
+      </div>
+
+    </div>
+    <div class="section"  style="background-image: url(./img/온전한우주.png);">
+
+
+
+      <div class="mid">
+        <div class="img-box planet5 a-p" style="background-image: url(./img/5planet.png);"></div>
+      </div>
+      <div class="txt-btm4">
+        <p>"깊이 있는 디자이너"</p>
+      </div>
+
+
+      <div class="right">
+        <div class="img-box portfolio-me" style="background-image: url(./img/portfolio.png);"></div>
+      </div>
+      <div class="img-box space">
+        <p>Portfolio</p>
+        <span>Web Redisign
+          <br>App Redisign
+          <br>Event Page
+          <br>Personal Website
+        </span>
+      </div>
+
+
+      <div class="anchor-box">
+        <a href="#section1">
+          <img src="./img/1planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section2">
+          <img src="./img/2planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section3">
+          <img src="./img/3planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section4">
+          <img src="./img/4planet.png" alt="">
+          <span></span>
+        </a>
+        <a href="#section5">
+          <img src="./img/5planet.png" alt="">
+          <span></span>
+        </a>
+      </div>
+
+
+    </div>
+    <div class="section">
+
+      <div class="long-space" style="background-image: url(./img/long\ space.png);">
+
+      </div>
+
+
+      <div class="right">
+
+      </div>
+      
+
+
+    </div>
 
 </body>
+
 </html>
