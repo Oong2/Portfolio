@@ -3,25 +3,12 @@ console.clear();
 new fullpage('#fullpage', {
   // a링크의 이름과 통일시킨다.
   anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'], 
+  dragAndMove:true,
 });
 
 
 $(document).ready(function() {
 
-  $(".fullpage").fullpage({
-      
-    navigation: true ,
-    navigationPosition: 'left' ,
-    
- 
-    loopHorizontal: false,
-
-    controlArrows: false,
-    slidesNavigation: true,
-    slidesNavPosition: 'top',
-    keyboardScrolling: true,
-
-  });
 
    $(".section > .top-right > .more").click(function(){
      $(".menu-more-wrap").addClass("active");
@@ -46,7 +33,10 @@ $(document).ready(function() {
   $(".top-wrap > .move > p:nth-child(2)").click(function(){
   
     fullpage_api.moveTo('section3', 1);
-  })
+
+
+    })
+
   
   $(".top-wrap > .move > p:nth-child(3)").click(function(){
   
@@ -60,7 +50,7 @@ $(document).ready(function() {
   
   $(".top-wrap > .move > p:nth-child(5)").click(function(){
   
-    fullpage_api.moveTo('section6', 1);
+    fullpage_api.moveTo('section6', 0);
   })
 
   $(".section > .menu-more-wrap > .more-txt > p:nth-child(1)").click(function(){
@@ -85,9 +75,48 @@ $(document).ready(function() {
   
   $(".section > .menu-more-wrap > .more-txt > p:nth-child(5)").click(function(){
   
-    fullpage_api.moveTo('section6', 1);
+    fullpage_api.moveTo('section6', 0);
   })
 
+  $(".sf1").click(function(){
+    fullpage_api.moveTo('section3', 0);
+  })
+
+  $(".sf2").click(function(){
+    fullpage_api.moveTo('section3', 1);
+  })
+
+  $(".sf3").click(function(){
+    fullpage_api.moveTo('section3', 2);
+  })
+
+  $(".sf4").click(function(){
+    fullpage_api.moveTo('section3', 3);
+  })
+
+  $(".sf4-0").click(function(){
+    fullpage_api.moveTo('section4', 0);
+  })
+
+  $(".sf4-1").click(function(){
+    fullpage_api.moveTo('section4', 1);
+  })
+
+  $(".sf4-2").click(function(){
+    fullpage_api.moveTo('section4', 2);
+  })
+
+  $(".sf4-3").click(function(){
+    fullpage_api.moveTo('section4', 3);
+  })
+
+  $(".sf5-0").click(function(){
+    fullpage_api.moveTo('section5', 0);
+  })
+
+  $(".sf5-1").click(function(){
+    fullpage_api.moveTo('section5', 1);
+  })
   //  $(".sf1").click(function(){
 
   //   fullpage_api.moveTo('section4', 1);
