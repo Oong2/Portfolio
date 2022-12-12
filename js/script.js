@@ -9,6 +9,15 @@ new fullpage('#fullpage', {
 
 $(document).ready(function() {
 
+  $(".text-bottom1 > .txt1").click(function(){
+    
+    fullpage_api.moveTo('section6', 1);
+  })
+  $(".text-bottom1 > .txt2").click(function(){
+    
+    fullpage_api.moveTo('section4', 1);
+  })
+
 
    $(".section > .top-right > .more").click(function(){
      $(".menu-more-wrap").addClass("active");

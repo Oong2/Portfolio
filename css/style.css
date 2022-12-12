@@ -130,6 +130,7 @@ a {
 
 .right {
   width: 1920px;
+  height: 900px;
   position: absolute;
 }
 
@@ -315,6 +316,8 @@ a {
 } */
 
 .mid {
+  width:500px;
+  height: 400px;
   position: absolute;
   z-index: 999;
   margin-left: 930px;
@@ -365,6 +368,15 @@ a {
 }
 
 .section>.bottom>.text-bottom1>.txt1 {
+  color: white;
+  margin-left: 40px;
+  font-size: 24px;
+  letter-spacing: -6.5%;
+  text-shadow: 0 4px 4px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-family: kaisei Tokumin;
+}
+.section>.bottom>.text-bottom1>.txt2 {
   color: white;
   margin-left: 40px;
   font-size: 24px;
@@ -670,10 +682,12 @@ a {
   animation-direction:alternate;
 } */
 
-.mid>.planet3 {
+.mid > .planet3 {
   width: 60px;
   height: 60px;
   filter: drop-shadow(0 0 25px rgba(82, 193, 255, 0.5));
+  /* z-index: 99999; */
+
 }
 
 /* .section > .star{ 
@@ -817,12 +831,13 @@ a {
   z-index: 9999;
 }
 
-.right>.portfolio-me {
+.slide > .right> .portfolio-me {
+  position: absolute;
   z-index: 999;
   width: 640px;
   height: 234px;  
-  margin-top: 50px;
-  margin-left: 1165px;
+  top: 372px;
+  right:115px;
   opacity: 0.8;
 }
 
@@ -834,9 +849,9 @@ a {
   transform: scale( 1.1 );
 }
 
-.mid>.planet5 {
-  top:-220px;
+.slide > .mid>.planet5 {
   position:absolute;
+  top:0px;
   width: 60px;
   height: 60px;
   filter: drop-shadow(0 0 25px rgba(255, 144, 43, 0.5));
@@ -893,7 +908,58 @@ a {
 .section > .long-space{
   position: absolute;
   width: 1920px;
-  height: 4310px;
+  height: 4911px;
+}
+
+
+.section > .long-space >.credit-wrap{
+  
+  animation-name: down;
+  animation-duration:30s;
+  animation-iteration-count: 1s;
+  animation-delay:0.5s;
+  animation-direction:alternate;
+}
+
+.section > .long-space >.credit-wrap > p{
+  color: white;
+  z-index: 9999;
+  font-family: kaisei Tokumin;
+  font-size: 72px;
+  margin-top: 220px;
+  margin-left: 732px;
+}
+
+.section > .long-space >.credit-wrap > .span-wrap{
+  position: absolute;
+  left:727px;
+  margin-top: 4509px;
+}
+
+
+.section > .long-space > .credit-wrap > .credit{
+  position: absolute;
+  /* display:flex;
+  justify-content: center; */
+  width: 1129px;
+  height: 4201px;
+  margin-left: 396px;
+  margin-top:166px;
+  
+}
+
+.section > .long-space >.credit-wrap > .span-wrap > span{
+  
+  color: white;
+  z-index: 9999;
+  font-family: kaisei Tokumin;
+  font-size: 16px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.slide{
+  position: relative;
 }
 
 .slide > .left-txt{
@@ -967,8 +1033,10 @@ a {
 }
 
 .slide > .port-img{
-  margin-top:55px;
-  margin-left:342px;
+  position: absolute;
+  width: 1300px;
+  top:255px;
+  left:382px;
   z-index: 99999;
 }
 
@@ -980,6 +1048,78 @@ a {
   filter: drop-shadow(0 0 200px rgba(255, 255, 255, 0.25));
   transition:0.5s;
   cursor:pointer;
+  
+}
+
+.port{
+  margin-left: 35px;
+}
+
+.port5{
+  margin-top:-50px;
+  margin-left: 10px;
+}
+
+
+.port:hover{
+  filter: drop-shadow(0 0 200px rgba(255, 255, 255, 0.25));
+  transition:0.5s;
+  
+  transform: scale( 1.1 );
+
+}
+
+.slide > .port-img > .port > span{
+  position: absolute;
+  left:7px;
+  top:425px;
+  font-family: inter;
+  font-weight: 1000;
+  letter-spacing:-1px;
+  transform: rotate(-17deg);
+  line-height:42px;
+  font-size: 32px;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.25));
+
+}
+
+.slide > .port-img > .port > p {
+  position: absolute;
+  left:15px;
+  top:20px;
+  color: white;
+  font-weight: 900;
+  font-size: 28px;
+  font-family: inter;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.slide > .port-img > .port > .por-txt1{
+  background: linear-gradient(to bottom, #FFFFFF, #E454DF, #B8D0FF);
+  color: transparent;
+  -webkit-background-clip: text;
+  
+}
+
+.slide > .port-img > .port > .por-txt2{
+  background: linear-gradient(to bottom, #E454DF, #B8D0FF, #B6FDEC);
+  color: transparent;
+  -webkit-background-clip: text;
+  
+}
+
+.slide > .port-img > .port > .por-txt3{
+  background: linear-gradient(to bottom, #B8D0FF, #B6FDEC, #E454DF);
+  color: transparent;
+  -webkit-background-clip: text;
+  
+}
+
+.slide > .port-img > .port > .por-txt4{
+  background: linear-gradient(to bottom, #E454DF, #B6FDEC, #B8D0FF);
+  color: transparent;
+  -webkit-background-clip: text;
+  
 }
 
 
@@ -990,6 +1130,9 @@ a {
    
   transform: scale( 1.1 )
 }
+
+
+
 
 .fp-watermark{
   display:none;
@@ -1059,6 +1202,17 @@ a {
     margin-left:20px;
   }
 }
+
+@keyframes down {
+  0% {
+      top:0px;
+  }
+  100% {
+      top:4911px;
+  }
+}
+
+
 /* 
 @keyframes sb {
   0% { 
